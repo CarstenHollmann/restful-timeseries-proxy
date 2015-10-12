@@ -389,7 +389,9 @@
         <swc.version>3.3.0-rc.3-SNAPSHOT</swc.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <sensorwebclient.webapp.name>${project.artifactId}-${project.version}</sensorwebclient.webapp.name>
+        <!-- <proxy.webapp.name>${project.artifactId}-webapp-${project.version}</proxy.webapp.name> -->
+        <!-- <proxy.webapp.name>rtp-sos-webapp</proxy.webapp.name> -->
+        <proxy.webapp.name>rtp-stapi-webapp</proxy.webapp.name>
 
         <timestamp>${maven.build.timestamp}</timestamp>
         <maven.build.timestamp.format>yyyy</maven.build.timestamp.format>

@@ -4,18 +4,57 @@ web interface -->
 <!-- Some of these properties are not implemented yet! -->
 <instances>
 
-    <instance>
-        <itemName>PEGELONLINE</itemName>
-
-        <url>http://pegelonline.wsv.de/webservices/gis/gdi-sos</url>
-<!--        <url>http://sensorweb.demo.52north.org:80/PegelOnlineSOSv2.1/sos</url>-->
-
-        <version>1.0.0</version>
-        <timeout>30000</timeout>
-        <supportsFirstLatest>true</supportsFirstLatest>
-        <metadataHandler>org.n52.server.da.oxf.DefaultMetadataHandler</metadataHandler>
+    <!-- <instance>
+        <itemName>IDDSS-Sensor</itemName>
+        <url>http://iddss-sensor.cdmps.org.au:8080/52n-sos-webapp/service/pox</url>
+		<version>2.0.0</version>
+		<supportsFirstLatest>true</supportsFirstLatest>
+        <metadataHandler>org.n52.server.da.oxf.DefaultFOIMetadataHandler</metadataHandler>
         <adapter>org.n52.server.da.oxf.SOSAdapter_OXFExtension</adapter>
+        <llEasting>11.00</llEasting>
+        <llNorthing>50.00</llNorthing>
+        <urEasting>28.0</urEasting>
+        <urNorthing>70.0</urNorthing>
+        <defaultZoom>10</defaultZoom>
+        <requestChunk>200</requestChunk>
+        <autoZoom>true</autoZoom>
+        <protectedService>true</protectedService>
         <httpConnectionPoolSize>50</httpConnectionPoolSize>
-    </instance>
+    </instance> -->
+    
+    
+   <instance>
+        <itemName>SensorThings-API OGC IMIS-IoT</itemName>
+        <service>SensorThings</service>
+        <url>http://ogcpilot.sensorup.com:8080/OGCSensorThings/v1.0</url>
+        <version>v1.0</version>
+        <metadataHandler>org.n52.server.sensorthings.da.SensorThingsMetadataHandler</metadataHandler>
+        <adapter>org.n52.server.sensorthings.da.SensorThingsAdapter</adapter>
+        <supportsFirstLatest>true</supportsFirstLatest>
+        <requestChunk>2100</requestChunk>
+        <autoZoom>false</autoZoom>
+        <llEasting>8.2</llEasting>
+        <llNorthing>53.2</llNorthing>
+        <urEasting>10.5</urEasting>
+        <urNorthing>54.1</urNorthing>
+        <defaultZoom>13</defaultZoom>
+    </instance> <!--  -->
+    
+    <instance>
+        <itemName>SensorThings-API chashuhotpot.sensorup.com</itemName>
+        <service>SensorThings</service>
+        <url>http://chashuhotpot.sensorup.com/OGCSensorThings/v1.0</url>
+        <version>v1.0</version>
+        <metadataHandler>org.n52.server.sensorthings.da.SensorThingsMetadataHandler</metadataHandler>
+        <adapter>org.n52.server.sensorthings.da.SensorThingsAdapter</adapter>
+        <supportsFirstLatest>true</supportsFirstLatest>
+        <requestChunk>2100</requestChunk>
+        <autoZoom>false</autoZoom>
+        <llEasting>8.2</llEasting>
+        <llNorthing>53.2</llNorthing>
+        <urEasting>10.5</urEasting>
+        <urNorthing>54.1</urNorthing>
+        <defaultZoom>13</defaultZoom>
+    </instance> <!--  -->
 
 </instances>
