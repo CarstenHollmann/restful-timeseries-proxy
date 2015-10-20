@@ -135,7 +135,7 @@
                             </excludes>
                         </resource>
                     </webResources>
-                    <warName>${project.artifactId}-${project.version}</warName>
+                    <warName>proxy##${project.version}</warName>
 
                     <overlays>
                         <overlay>

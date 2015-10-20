@@ -4,18 +4,35 @@ web interface -->
 <!-- Some of these properties are not implemented yet! -->
 <instances>
 
-    <instance>
-        <itemName>PEGELONLINE</itemName>
+	<instance>
+        <itemName>TriOS-SOS</itemName>
+        <url>http://hspeed.trios.de:8888/52n-sos-webapp/service</url>
+        <version>2.0.0</version>
+        <waterML>false</waterML>
+        <supportsFirstLatest>true</supportsFirstLatest>
+        <metadataHandler>org.n52.server.da.oxf.DefaultMetadataHandler</metadataHandler>
+        <adapter>org.n52.server.da.oxf.SOSAdapter_OXFExtension</adapter>
+        <requestChunk>300</requestChunk>
+        <autoZoom>true</autoZoom>
+        <llEasting>5</llEasting>
+        <llNorthing>46.00</llNorthing>
+        <urEasting>16</urEasting>
+        <urNorthing>56.0</urNorthing>
+        <defaultZoom>13</defaultZoom>
+        <enableEventing>true</enableEventing>
+    </instance>
 
-        <url>http://pegelonline.wsv.de/webservices/gis/gdi-sos</url>
-<!--        <url>http://sensorweb.demo.52north.org:80/PegelOnlineSOSv2.1/sos</url>-->
-
-        <version>1.0.0</version>
-        <timeout>30000</timeout>
+	<!-- 
+	<instance>
+        <itemName>UPC-SOS</itemName>
+        <url>http://147.83.159.163:8082/nexos-sos-webapp/service</url>
+        <version>2.0.0</version>
+        <timeout>90000</timeout>
         <supportsFirstLatest>true</supportsFirstLatest>
         <metadataHandler>org.n52.server.da.oxf.DefaultMetadataHandler</metadataHandler>
         <adapter>org.n52.server.da.oxf.SOSAdapter_OXFExtension</adapter>
         <httpConnectionPoolSize>50</httpConnectionPoolSize>
-    </instance>
+    </instance> 
+    -->
 
 </instances>
