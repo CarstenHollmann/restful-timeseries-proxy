@@ -4,18 +4,17 @@ web interface -->
 <!-- Some of these properties are not implemented yet! -->
 <instances>
 
-    <instance>
-        <itemName>PEGELONLINE</itemName>
-
-        <url>https://pegelonline.wsv.de/webservices/gis/gdi-sos</url>
-<!--        <url>http://sensorweb.demo.52north.org:80/PegelOnlineSOSv2.1/sos</url>-->
-
-        <version>1.0.0</version>
-        <timeout>30000</timeout>
-        <supportsFirstLatest>true</supportsFirstLatest>
-        <metadataHandler>org.n52.server.da.oxf.DefaultMetadataHandler</metadataHandler>
-        <adapter>org.n52.server.da.oxf.SOSAdapter_OXFExtension</adapter>
-        <httpConnectionPoolSize>50</httpConnectionPoolSize>
-    </instance>
+	<instance>
+		<itemName>Aggerverband (Kisters SOS)</itemName>
+		<url>http://gis.aggerverband.de/KiWIS/KiWIS?datasource=1</url>
+		<version>2.0.0</version>
+		<metadataHandler>org.n52.server.sos.connector.hydro.HydroMetadataHandler</metadataHandler>
+		<adapter>org.n52.server.sos.connector.hydro.kisters.SOSwithSoapAdapter_Kisters</adapter>
+		<waterML>true</waterML>
+		<requestChunk>200</requestChunk>
+		<autoZoom>true</autoZoom>
+		<protectedService>false</protectedService>
+		<timeout>100000</timeout>
+	</instance>
 
 </instances>
